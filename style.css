@@ -1,0 +1,78 @@
+@font-face{
+    font-family: AlarmClock;
+    src: url(alarm\ clock.ttf)
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #7ba37b;
+}
+
+.container{
+    width: 500px;
+    
+    margin-top: 200px;
+    margin-left: 35%;
+    font-family: AlarmClock;
+    border: 5px solid white;
+    border-radius: 10px
+}
+.main{
+    margin-left: 12%
+}
+.time{
+    font-size: 120px;
+    text-align: right;
+    margin-right: 110px;
+}
+.day{
+    font-size: 80px;
+    text-align: center;
+    display: inline-block;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.temp{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.temp sup{
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top
+}
+.temp-icon{
+    display: inline-block;
+    position: relative;
+    height: 45px;
+    width: 25%;
+}
+progress{
+    background-color: blue;
+    transform: rotate(270deg);
+    width: 55px;
+    height: 10px;
+    margin-top: 25px;
+    margin-left: -20px;
+}
+progress[value]::-webkit-progress-value {
+    background-color: red
+}
+progress::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red
+}
+.temp-value{
+    font-size: 80px;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
